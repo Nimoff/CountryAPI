@@ -19,11 +19,15 @@ class RouteServiceProvider extends ServiceProvider
      */
     public const HOME = '/home';
 
+
     /**
      * Define your route model bindings, pattern filters, etc.
      *
      * @return void
      */
+
+    protected $namespace = 'App\\Http\\Controllers';
+
     public function boot()
     {
         $this->configureRateLimiting();
